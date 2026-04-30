@@ -2,14 +2,16 @@
   RewriteEngine On
   RewriteBase /
   
-  # Redirect all requests to the public_html directory
-  RewriteCond %{REQUEST_URI} !^/public_html/
-  RewriteRule ^(.*)$ public_html/$1 [L]
+  # Serve static files directly
+  RewriteCond %{REQUEST_FILENAME} -f
+  RewriteRule ^ - [L]
+  
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+  
+  # For SPA, redirect all other requests to index.html
+  RewriteRule ^ index.html [L]
 </IfModule>
 
-# Allow access to public_html
-<Directory "public_html">
-  Options -Indexes
-  AllowOverride All
-  Require all granted
-</Directory>
+# Prevent directory listing
+Options -Indexes
