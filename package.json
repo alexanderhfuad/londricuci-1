@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "cd artifacts/cuci-cuci && npm run build",
+    "build": "cd artifacts/cuci-cuci && npm install && npm run build",
     "typecheck": "cd artifacts/cuci-cuci && npm run typecheck"
   },
   "private": true,
