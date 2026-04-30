@@ -1,0 +1,32 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "KGy-XYHtxTOFhqIaTf8hI"
+uri = "file://artifacts/cuci-cuci/public/images/hero.png"
+type = "image"
+title = "sunlit folded laundry hero"
+
+[[generated]]
+id = "BX-IFBUUeJ8hWlglwrSUW"
+uri = "file://artifacts/cuci-cuci/public/images/service-regular.png"
+type = "image"
+title = "regular daily laundry"
+
+[[generated]]
+id = "x3e5JHFr3UqsVwx17EPHx"
+uri = "file://artifacts/cuci-cuci/public/images/service-express.png"
+type = "image"
+title = "express fast laundry"
+
+[[generated]]
+id = "eSzHPO567nv0xjb-6vWDZ"
+uri = "file://artifacts/cuci-cuci/public/images/service-satuan.png"
+type = "image"
+title = "premium single item laundry"
+
+[[generated]]
+id = "Zyr9bsX9l93r4Sm8CpCwo"
+uri = "file://artifacts/cuci-cuci/public/images/service-dryclean.png"
+type = "image"
+title = "premium dry cleaning suit"
