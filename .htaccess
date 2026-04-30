@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  
+  # Redirect all requests to the public_html directory
+  RewriteCond %{REQUEST_URI} !^/public_html/
+  RewriteRule ^(.*)$ public_html/$1 [L]
+</IfModule>
+
+# Allow access to public_html
+<Directory "public_html">
+  Options -Indexes
+  AllowOverride All
+  Require all granted
+</Directory>
