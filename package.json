@@ -1,14 +1,11 @@
 {
-  "name": "workspace",
-  "version": "0.0.0",
+  "name": "londri-cuci",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "cd artifacts/cuci-cuci && npm install && npm run build && cp -r dist/* ../../ && chmod -R 755 ../../ && find ../../ -type f -exec chmod 644 {} \\;",
+    "dev": "cd artifacts/cuci-cuci && npm run dev",
+    "build": "cd artifacts/cuci-cuci && npm run build",
     "typecheck": "cd artifacts/cuci-cuci && npm run typecheck"
   },
-  "private": true,
-  "devDependencies": {
-    "prettier": "^3.8.1",
-    "typescript": "~5.9.2"
-  }
+  "private": true
 }
