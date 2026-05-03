@@ -2,10 +2,16 @@
   "name": "londri-cuci",
   "version": "1.0.0",
   "license": "MIT",
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "workspaces": [
+    "artifacts/cuci-cuci"
+  ],
   "scripts": {
-    "dev": "cd artifacts/cuci-cuci && npm run dev",
-    "build": "cd artifacts/cuci-cuci && npm run build",
-    "typecheck": "cd artifacts/cuci-cuci && npm run typecheck"
+    "dev": "npm run dev --workspace @workspace/cuci-cuci",
+    "build": "npm run build --workspace @workspace/cuci-cuci",
+    "typecheck": "npm run typecheck --workspace @workspace/cuci-cuci"
   },
   "private": true
 }
